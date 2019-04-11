@@ -36,7 +36,7 @@ function prev_pic(){
 	}
 	showCurrentDot();
 }
-var timwe = null;
+var timer = null;
 function autoPlay(){
 	timer = setInterval(function(){
 		next_pic();
