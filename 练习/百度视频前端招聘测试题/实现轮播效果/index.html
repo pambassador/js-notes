@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>实现轮播</title>
+    <style type="text/css">
+    .content {
+        margin: 0 auto;
+        width: 1200px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 25%;
+        border-top: 3px solid #fff;
+        border-left: 3px solid #fff;
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+    }
+
+    .left-arrow {
+        left: 20px;
+        transform: rotate(-45deg);
+    }
+
+    .right-arrow {
+        right: 20px;
+        transform: rotate(135deg);
+    }
+
+    .arrow:hover {
+        border-color: rgba(125, 125, 125, 0.8);
+    }
+    .wrap{
+         width: 3600px;
+        background: #DDDDDD;
+        position: absolute;
+    }
+    .res {
+        padding: 0;
+       
+    }
+
+    .movie {
+        list-style-type: none;
+        float: left;
+        margin: 10px;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .img {
+        width: 180px;
+        height: 100px;
+    }
+
+    .subtitle,
+    .title {
+        display: block;
+        font-size: 12px;
+    }
+    .title{
+        color:#000;
+        line-height:20px;
+    }
+    .subtitle{
+        color:#666666
+    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="wrap" id="main" style="left:0">
+        </div>
+        <a href="javascript:;" class="arrow left-arrow">
+        </a>
+        <a href="javascript:;" class="arrow right-arrow">
+        </a>
+    </div>
+</body>
+<script type="text/javascript" src="http://list.video.baidu.com/pc_static/common/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./data.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+
+</html>
