@@ -39,6 +39,7 @@ function throttle(fn, gap) {
         if (!timer) {
             timer = setTimeout(function() {
                 fn.apply(context, args);
+                timer = null;
             }, gap);
         }
     }
